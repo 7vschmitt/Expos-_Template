@@ -10,9 +10,7 @@
 \usepackage{csquotes}
 
 
-\usepackage[style=apa]{biblatex}
-
-\addbibresource{sample.bib}
+\usepackage[round]{natbib} %bibliography
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -57,9 +55,15 @@ This is one of the core elements. Here you should describe the elements of your 
 
 
 
-
 \textbf{If you add some references in the sample.bib file you can refer to them by the cite command (e.g. \cite{moore2008defining}).}
 
-\printbibliography
+If you use the cite command the author(s) will appear without brackets in the text you can use that if you want to directly refer to them e.g. according to \cite{almuhimedi2015your}...
+
+If you only want the author(s) to appear in brackets you can use the citep command, e.g. \citep{almuhimedi2015your}.
+
+You can simply add more authors in the citep or cite command: \citep{moore2008defining, almuhimedi2015your, decew2018conceptual} or \cite{moore2008defining, almuhimedi2015your, decew2018conceptual}. 
+
+\bibliographystyle{apalike}
+\bibliography{sample}
 
 \end{document}
